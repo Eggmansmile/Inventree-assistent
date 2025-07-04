@@ -1,0 +1,59 @@
+body {
+  background: #f4f6fb;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  padding: 2em 2em 1.5em 2em;
+  text-align: center;
+}
+
+h1 {
+  color: #2a3a5e;
+  margin-bottom: 1.5em;
+  font-size: 1.7em;
+}
+
+#reader {
+  width: 100%;
+  min-height: 250px;
+  margin-bottom: 1em;
+}
+
+#result {
+  font-size: 1.1em;
+  color: #1a7f37;
+  background: #eafbe7;
+  border-radius: 6px;
+  padding: 0.7em;
+  margin-bottom: 1.2em;
+  min-height: 2.2em;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+button {
+  background: #2a3a5e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.7em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #1a7f37;
+}
