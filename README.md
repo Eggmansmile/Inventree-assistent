@@ -1,7 +1,7 @@
 # Inventree-assistent
 barcode scanner that automaticly removes items from our inventree stockage.
 
-#Things to be done
+# Things to be done
 - Barcode scanner (partially done)
 - Code memory
 - Communcation with inventree
