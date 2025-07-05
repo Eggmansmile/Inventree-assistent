@@ -10,7 +10,7 @@ body {
   margin: 40px auto;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
   padding: 2em 2em 1.5em 2em;
   text-align: center;
 }
@@ -56,4 +56,9 @@ button {
 
 button:hover {
   background: #1a7f37;
+}
+
+.underside-button {
+  margin-top: 1.5em;
+  text-align: center;
 }

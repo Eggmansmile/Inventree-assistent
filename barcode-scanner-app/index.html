@@ -12,9 +12,13 @@
         <h1>Barcode/QR Code Scanner</h1>
         <div id="reader"></div>
         <div id="result">Scan a code to see the result here.</div>
+        <div id="reply" class="reply-box">Ping response will appear here.</div>
         <div class="button-group">
             <button onclick="startScanner()">Start Scanning</button>
             <button onclick="stopScanner()">Stop Scanning</button>
+        </div>
+        <div class="onderside button">
+            <button onclick="pingGoogle()">Ping for testing</button>
         </div>
     </div>
     <script src="script.js"></script>

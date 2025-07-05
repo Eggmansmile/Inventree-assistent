@@ -45,3 +45,14 @@ function stopScanner() {
         });
     }
 }
+
+//ping google for debugging
+function pingGoogle() {
+    fetch('https://www.google.com', { mode: 'no-cors' })
+        .then(() => {
+            document.getElementById('reply').innerText = 'reply';
+        })
+        .catch(() => {
+            document.getElementById('reply').innerText = 'timeout/error';
+        });
+}
