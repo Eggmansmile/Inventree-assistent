@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="layout.css">
 </head>
 <body>
+    <div id="loginOverlay" class="login-overlay">
+        <form id="loginForm" class="login-form">
+            <h2>Login to Inventree</h2>
+            <h3>this login info will be send to the inventree server<br>
+                 so if it's not correct you won't get acces</h3>
+            <label>Username:<br><input type="text" id="loginUsername" required></label><br><br>
+            <label>Password:<br><input type="password" id="loginPassword" required></label><br><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
     <div class="container">
         <h1>Barcode/QR Code Scanner</h1>
         <div id="reader"></div>
@@ -18,9 +28,9 @@
             <button onclick="stopScanner()">Stop Scanning</button>
         </div>
         <div class="onderside button">
-            <button onclick="pingGoogle()">Ping for testing</button>
+            <button onclick="pingwebsite()">Ping for testing</button>
         </div>
-    </div>
+    <script src="login.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

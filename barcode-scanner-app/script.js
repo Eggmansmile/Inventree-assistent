@@ -46,9 +46,9 @@ function stopScanner() {
     }
 }
 
-//ping google for debugging
-function pingGoogle() {
-    fetch('https://www.google.com', { mode: 'no-cors' })
+//ping website for debugging
+function pingwebsite() {
+    fetch('http://inventree.localhost/', { mode: 'no-cors' })
         .then(() => {
             document.getElementById('reply').innerText = 'reply';
         })
