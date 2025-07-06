@@ -22,13 +22,10 @@ function startScanner() {
             if (!hasScanned && decodedText) {
                 hasScanned = true;
                 document.getElementById("result").innerText = `Scanned: ${decodedText}`;
+                logToTerminal(`Scanned: ${decodedText}`);
                 stopScanner(); // Stop after first successful scan
             }
         },
-        // Callback for scan errors (optional)
-        (errorMessage) => {
-            // You can show scan errors here if you want
-        }
     ).catch(err => {
         // Handle errors (e.g., camera not accessible)
         document.getElementById("result").innerText = `Error: ${err}`;
