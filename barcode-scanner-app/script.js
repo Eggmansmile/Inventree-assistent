@@ -55,4 +55,5 @@ function pingwebsite() {
         .catch(() => {
             document.getElementById('reply').innerText = 'timeout/error';
         });
+        logToTerminal("reply")
 }
