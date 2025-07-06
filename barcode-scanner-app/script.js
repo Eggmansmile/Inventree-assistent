@@ -13,7 +13,7 @@ function startScanner() {
     html5QrcodeScanner.start(
         { facingMode: "environment" }, // Use the back camera if available
         {
-            fps: 10,      // Frames per second for scanning
+            fps: 15,      // Frames per second for scanning
             qrbox: 600   // Size of the scanning box (in pixels)
         },
         // Callback when a code is successfully scanned
@@ -45,12 +45,16 @@ function stopScanner() {
 
 //ping website for debugging
 function pingwebsite() {
-    fetch('http://inventree.localhost/', { mode: 'no-cors' })
+    fetch('http://inventree.localhost/')
         .then(() => {
             document.getElementById('reply').innerText = 'reply';
+            logToTerminal("reply")
         })
         .catch(() => {
             document.getElementById('reply').innerText = 'timeout/error';
         });
-        logToTerminal("reply")
+        setTimeout(() => {
+            logToTerminal(document.getElementById('reply').innerText);
+        }, 4000); // Small delay to allow the DOM to update
+
 }

@@ -47,8 +47,11 @@ function setupLoginForm() {
     passwordInput.value = auth.password;
 
     // Handle form submission
-    loginForm.addEventListener('submit', (e) => {
-        e.preventDefault();
+    loginForm.addEventListener('submit', (event) => {
+        // The 'event' object contains information about the form submission.
+        // We call preventDefault() to stop the browser's default behavior,
+        // which is to reload the page. This lets us handle the login with JavaScript.
+        event.preventDefault();
 
         // Update the global auth object with the new values from the form
         auth.username = usernameInput.value;
