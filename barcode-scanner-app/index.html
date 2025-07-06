@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barcode/QR Code Scanner</title>
+    <link rel="icon" type="image/png" href="icon.png">
     <script src="https://unpkg.com/html5-qrcode" type="text/javascript"></script>
     <link rel="stylesheet" href="layout.css">
 </head>
@@ -11,25 +12,31 @@
     <div id="loginOverlay" class="login-overlay">
         <form id="loginForm" class="login-form">
             <h2>Login to Inventree</h2>
-            <h3>this login info will be send to the inventree server<br>
-                 so if it's not correct you won't get acces</h3>
-            <label>Username:<br><input type="text" id="loginUsername" required></label><br><br>
-            <label>Password:<br><input type="password" id="loginPassword" required></label><br><br>
+            <h3>This login info will be sent to the Inventree server, so if it's not correct you won't get access.</h3>
+            <label>Username:<input type="text" id="loginUsername" required></label>
+            <label>Password:<input type="password" id="loginPassword" required></label>
             <button type="submit">Login</button>
         </form>
     </div>
-    <div class="container">
-        <h1>Barcode/QR Code Scanner</h1>
-        <div id="reader"></div>
-        <div id="result">Scan a code to see the result here.</div>
-        <div id="reply" class="reply-box">Ping response will appear here.</div>
-        <div class="button-group">
-            <button onclick="startScanner()">Start Scanning</button>
-            <button onclick="stopScanner()">Stop Scanning</button>
+    <main id="app-content">
+        <div class="header-image-container">
+            <img src="icon.png" alt="Maakleerplek Logo">
         </div>
-        <div class="onderside button">
-            <button onclick="pingwebsite()">Ping for testing</button>
+        <div class="container">
+            <h1>Barcode/QR Code Scanner</h1>
+            <div id="reader"></div>
+            <div id="result">Scan a code to see the result here.</div>
+            <div id="reply">Ping response will appear here.</div>
+            <div class="button-group">
+                <button onclick="startScanner()">Start Scanning</button>
+                <button onclick="stopScanner()">Stop Scanning</button>
+            </div>
+            <div class="underside-button">
+                <button onclick="pingwebsite()">Ping for testing</button>
+            </div>  
+            <div id="terminal" class="terminal"></div>
         </div>
+    </main>
     <script src="login.js"></script>
     <script src="script.js"></script>
 </body>

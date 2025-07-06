@@ -5,6 +5,18 @@ body {
   padding: 0;
 }
 
+.header-image-container {
+    text-align: center;
+    margin: 20px auto 0;
+}
+
+.header-image-container img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
 .container {
   max-width: 400px;
   margin: 40px auto;
@@ -133,4 +145,18 @@ button:hover {
 
 .login-form button[type="submit"]:hover {
     background: #125ea2;
+}
+
+.terminal {
+    margin-top: 2em;
+    background-color: #2d2d2d;
+    color: #00ff41;
+    font-family: 'Consolas', 'Courier New', monospace;
+    padding: 1em;
+    border-radius: 6px;
+    min-height: 120px;
+    text-align: left;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-y: auto;
 }
